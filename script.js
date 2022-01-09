@@ -22,3 +22,14 @@ function createColumn() {
         }
     }
 }
+
+function removeColumn(){
+    if(row.length===0) {
+        return
+    }
+    else{
+        for(let i = 0; i < row.length; i++){
+            row[i].deleteCell(0)
+        }
+    }
+}
