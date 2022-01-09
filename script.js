@@ -33,3 +33,13 @@ function removeColumn(){
         }
     }
 }
+
+//Removes the last row
+function removeRow(){
+    if(row.length===0){
+        return
+    }
+    else{
+        myTableEl.deleteRow(row[row.length-1])
+    }
+}
