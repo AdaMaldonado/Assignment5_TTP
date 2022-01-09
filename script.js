@@ -1,5 +1,6 @@
 let myTableEl = document.getElementById("myTable")
 let row = myTableEl.rows
+let tbdy = document.getElementById("ttbody")
 
 function createRow() {
     if (row.length === 0) {
@@ -52,7 +53,11 @@ myTableEl.addEventListener("click", (ev) => {
     let clr = document.getElementById("clrSelection")
     let setClr = clr.options[clr.selectedIndex].value
     ev.target.setAttribute("bgcolor", setClr)
+    
 })
+
+
+
 
 
 
@@ -88,9 +93,10 @@ function clearAll() {
     for (let i = 0; eachRow = row[i]; i++) {
         for (let j = 0; eachCol = eachRow.cells[j]; j++) {
             eachCol.removeAttribute("bgcolor")
+            eachRow.removeAttribute("bgcolor")
         }
     }
-    //myTableEl.style.backgroundColor = ""
+    tbdy.removeAttribute("bgcolor")
 }
 
 
