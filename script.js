@@ -22,7 +22,7 @@ function createColumn() {
         }
     }
 }
-//removes last column
+//removes first column
 function removeColumn(){
     if(row.length===0) {
         return
@@ -34,25 +34,21 @@ function removeColumn(){
     }
 }
 
-//Removes the last row
+//Removes the first row
 function removeRow(){
     if(row.length===0){
         return
     }
     else{
-        myTableEl.deleteRow(row[row.length-1])
+        myTableEl.deleteRow(row[0])
     }
 }
 
-//know which cell the user clicked
+//know which cell the user clicked and change color
 myTableEl.addEventListener("click", (ev) => {
-    const[x,y] = [
-        ev.target.cellIndex,
-        ev.target.parentElement.rowIndex
-    ]
-    if(x===undefined || y===undefined){
-        return;
-    }
-    alert(`the cell at position ${x},${y} was clicked`)
+    ev.target.style.backgroundColor = "blue"
 })
+
+
+
 
