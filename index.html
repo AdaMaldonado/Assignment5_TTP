@@ -14,18 +14,25 @@
         <button id="addColumns" onclick="createColumn()">Add Column</button>
         <button id="removeRow" onclick="removeRow()">Remove Row</button>
         <button id="removeColumn" onclick="removeColumn()">Remove Column</button>
+        
         <label for="clrSelection">Color Selection</label>
+
         <select id="clrSelection">
-            <option></option>
+            <option>None</option>
             <option value="blue" id="op1">Blue</option>
             <option value="red" id="op2">Red</option>
             <option value="yellow" id="op3">Yellow</option>
         </select>
+
         <label for="fillType">Fill Type</label>
+
         <select id="fillType">
-            <option id = "fillOp1">Fill all uncolored cells</option>
-            <option id="fillOp2">Fill all cells</option>
+            <option>None</option>
+            <option value="fillUn"id="fillOp1">Fill all uncolored cells</option>
+            <option value="fillAll" id="fillOp2">Fill all cells</option>
         </select>
+
+        <button id="fillChange" onclick="changeAllUn()">Fill</button>
         <button id="clear">Clear</button>
         
 

@@ -54,5 +54,16 @@ myTableEl.addEventListener("click", (ev) => {
 })
 
 
+function changeAllUn(){
+    let clr = document.getElementById("clrSelection")
+    let setClr = clr.options[clr.selectedIndex].value
+    let fill = document.getElementById("fillType")
+    let setFill = fill.options[fill.selectedIndex].value
+    if(setFill==="fillUn"){
+        myTableEl.style.backgroundColor = setClr
+    }
+}
+
+
 
 
