@@ -2,8 +2,15 @@ let myTableEl = document.getElementById("myTable")
 let row = myTableEl.rows
 
 function createRow() {
-    let addRow = myTableEl.insertRow(0)
-    let cell = addRow.insertCell(0)
+    if (row.length === 0) {
+        let addRow = myTableEl.insertRow()
+        let cell = addRow.insertCell()
+    } else {
+        let addRow = myTableEl.insertRow()
+        for (let i = 0; i < row[0].cells.length; i++) {
+            let cell = addRow.insertCell(i)
+        }
+    }
 }
 
 function createColumn() {
