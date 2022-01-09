@@ -44,9 +44,13 @@ function removeRow(){
     }
 }
 
+
+
 //know which cell the user clicked and change color
 myTableEl.addEventListener("click", (ev) => {
-    ev.target.style.backgroundColor = "blue"
+    let clr = document.getElementById("clrSelection")
+    let setClr = clr.options[clr.selectedIndex].value
+    ev.target.style.backgroundColor = setClr
 })
 
 
