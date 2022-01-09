@@ -46,28 +46,13 @@ function removeRow(){
 }
 
 
-let obj={}
-let i = 0
+
 //know which cell the user clicked and change color
 myTableEl.addEventListener("click", (ev) => {
     let clr = document.getElementById("clrSelection")
     let setClr = clr.options[clr.selectedIndex].value
     ev.target.setAttribute("bgcolor", setClr)
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -97,6 +82,16 @@ function changeAllUn(){
     
 }
 
+
+//clears all the cells
+function clearAll() {
+    for (let i = 0; eachRow = row[i]; i++) {
+        for (let j = 0; eachCol = eachRow.cells[j]; j++) {
+            eachCol.removeAttribute("bgcolor")
+        }
+    }
+    //myTableEl.style.backgroundColor = ""
+}
 
 
 
