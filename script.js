@@ -21,7 +21,8 @@ function createColumn() {
         createRow()
     } else {
         for (let i = 0; i < row.length; i++) {
-            let cell = row[i].insertCell(row[0].cells.length-1)
+            //let cell = row[i].insertCell(row[0].cells.length-1)
+            let cell = row[i].insertCell(-1)
         }
     }
 }
