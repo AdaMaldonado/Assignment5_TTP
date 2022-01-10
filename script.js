@@ -2,6 +2,7 @@ let myTableEl = document.getElementById("myTable")
 let row = myTableEl.rows
 let tbdy = document.getElementById("ttbody")
 
+//adds rows
 function createRow() {
     if (row.length === 0) {
         let addRow = myTableEl.insertRow()
@@ -14,6 +15,7 @@ function createRow() {
     }
 }
 
+//adds columns
 function createColumn() {
     if (row.length === 0) {
         createRow()
@@ -24,26 +26,26 @@ function createColumn() {
     }
 }
 
-//removes first column
+//removes last column
 function removeColumn(){
     if(row.length===0) {
         return
     }
     else{
         for(let i = 0; i < row.length; i++){
-            row[i].deleteCell(row[0]);
+            row[i].deleteCell(-1)
         }
         
     }
 }
 
-//Removes the first row
+//Removes the last row
 function removeRow(){
     if(row.length===0){
         return
     }
     else{
-        myTableEl.deleteRow(0)
+        myTableEl.deleteRow(-1)
     }
 }
 
