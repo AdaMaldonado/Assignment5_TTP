@@ -4,7 +4,7 @@ table {
 
 td {
     border: 1px solid black;
-    padding: 20px;
+    padding: 25px;
 }
 
 #ttbody{
@@ -13,4 +13,42 @@ td {
 
 tr{
     background-color: transparent;
+}
+
+body {
+    margin-left: 50px;
+    background-color: whitesmoke;
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+    color: whitesmoke;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#addRows {
+    background-color: #329B24;
+}
+
+#addColumns {
+    background-color: #329B24;
+}
+
+#removeRow {
+    background-color: #FF5147;
+}
+
+#removeColumn {
+    background-color: #FF5147;
+}
+
+#fillChange {
+    background-color: #329B24;
+}
+
+#clear {
+    background-color: #FF5147;
 }
