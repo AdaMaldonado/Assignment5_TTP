@@ -1,5 +1,6 @@
 table {
     border-collapse: collapse;
+    margin-left: 40px;
 }
 
 td {
@@ -7,17 +8,17 @@ td {
     padding: 25px;
 }
 
+body {
+    background-color: gainsboro;
+    margin: 0 auto
+}
+
 #ttbody{
-    background-color: transparent;
+    background-color: white;
 }
 
 tr{
     background-color: transparent;
-}
-
-body {
-    margin-left: 50px;
-    background-color: whitesmoke;
 }
 
 button {
@@ -68,4 +69,11 @@ select {
 option {
     font-weight: bold;
     color: #3D3D3D;
+}
+
+#control-panel{
+    background-color: lightslategray;
+    padding: 45px;
+    margin-top: -40px;
+    width: 100%;
 }
