@@ -26,7 +26,7 @@ button {
     color: whitesmoke;
     font-size: 17px;
     font-weight: bold;
-    padding: 20px;
+    padding: 15px;
 }
 
 #addRows {
@@ -51,4 +51,21 @@ button {
 
 #clear {
     background-color: #FF5147;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+option {
+    font-weight: bold;
+    color: #3D3D3D;
 }
