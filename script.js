@@ -19,10 +19,11 @@ function createColumn() {
         createRow()
     } else {
         for (let i = 0; i < row.length; i++) {
-            let cell = row[i].insertCell(0)
+            let cell = row[i].insertCell(row[0].cells.length-1)
         }
     }
 }
+
 //removes first column
 function removeColumn(){
     if(row.length===0) {
